@@ -10,7 +10,6 @@
           color="grey-darken-1"
           size="64"
         ></v-avatar>
-
         <div>john@google.com</div>
       </v-sheet>
 
@@ -36,6 +35,7 @@
       flat
       title="Application bar"
     >
+
       <template v-slot:append>
         <v-switch
           v-model="order"
@@ -90,6 +90,11 @@
         </v-list>
       </v-menu>
       <!-- Activator2 Slot End -->
+
+      
+      <v-btn icon @click="$router.push('/login')">
+        <v-icon>mdi-login</v-icon>
+      </v-btn>
 
     </v-app-bar>
 
